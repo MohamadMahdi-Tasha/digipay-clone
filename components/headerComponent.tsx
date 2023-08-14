@@ -1,6 +1,10 @@
 // Codes By Mahdi Tasha
+
+// Forcing Next.js To Render This Component As Client Side Component
+'use client';
+
 // Importing Part
-import React from "react";
+import React, {useState, useRef} from "react";
 import HolderComponent from "@/chunks/holderComponent";
 import Image from "next/image";
 import TypoLogoImage from '@/public/img/header/img-logo-typo.svg';
@@ -12,10 +16,20 @@ import MobileHeaderLinksComponent from "@/components/mobileHeaderLinksComponent"
 
 // Creating And Exporting Header Component As Default
 export default function HeaderComponent():React.ReactNode {
+    // Defining State Of Component
+    const [isScrolled, setScrolled] = useState(false);
+
+    // Checking If Window Is Scrolled
+    window.addEventListener('scroll', () => {
+        (window.scrollY !== 0)
+            ? setScrolled(true)
+            : setScrolled(false)
+    })
+
     // Returning JSX
     return (
-        <header className={'bg-white shadow'}>
-            <a href="#"><Image src={TopSideImage.src} alt={'ضمانت تترلند'} width={1150} height={20} className={'w-full h-[70px] object-cover'} /></a>
+        <header data-scrolled={isScrolled} className={'bg-white shadow fixed w-full  duration-500 transition-all data-[scrolled="false"]:top-0 data-[scrolled="true"]:top-[-10%]'}>
+            <a data-scrolled={isScrolled} className={'transition-all duration-500 data-[scrolled="true"]:opacity-0'} href="#"><Image src={TopSideImage.src} alt={'ضمانت تترلند'} width={1150} height={20} className={'w-full h-[70px] object-cover'} /></a>
             <HolderComponent className={'flex items-center justify-between gap-[20px] py-[20px]'}>
                 <MobileHeaderLinksComponent />
                 <a href="#"><Image src={TypoLogoImage.src} alt={'دیجی پی'} width={75} height={75} /></a>
