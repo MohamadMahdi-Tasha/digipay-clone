@@ -7,34 +7,29 @@ import TypoLogoImage from '@/public/img/header/img-logo-typo.svg';
 import DropDownImage from '@/public/img/header/img-user-dropdown.svg';
 import IconComponent from "@/chunks/iconComponent";
 import TopSideImage from '@/public/img/header/img-top-side.jpg'
+import ClickDropdownComponent from "@/chunks/clickDropdownComponent";
 
 // Creating And Exporting Header Component As Default
 export default function HeaderComponent():React.ReactNode {
     // Returning JSX
     return (
-        <header>
-            <Image src={TopSideImage.src} alt={'ضمانت تترلند'} width={100} height={100} />
-            <HolderComponent>
-                <Image src={TypoLogoImage.src} alt={'دیجی پی'} width={100} height={100} />
-                <ul>
-                    <li><a href="#">خدمات</a></li>
-                    <li><a href="#">دریافت اعتبار</a></li>
-                    <li><a href="#">گزارش سالانه</a></li>
-                    <li><a href="#">مجله اینترنتی دیجی پی</a></li>
+        <header className={'bg-white shadow'}>
+            <a href="#"><Image src={TopSideImage.src} alt={'ضمانت تترلند'} width={1150} height={20} className={'w-full h-[70px] object-cover'} /></a>
+            <HolderComponent className={'flex items-center justify-between gap-[20px] py-[20px]'}>
+                <Image src={TypoLogoImage.src} alt={'دیجی پی'} width={75} height={75} />
+                <ul className={'flex items-center gap-[30px]'}>
+                    <li><a className={'transition-all text-sm text-darkBlue hover:text-themeColor truncate hover:font-bold'} href="#">خدمات</a></li>
+                    <li><a className={'transition-all text-sm text-darkBlue hover:text-themeColor truncate hover:font-bold'} href="#">دریافت اعتبار</a></li>
+                    <li><a className={'transition-all text-sm text-darkBlue hover:text-themeColor truncate hover:font-bold'} href="#">گزارش سالانه</a></li>
+                    <li><a className={'transition-all text-sm text-darkBlue hover:text-themeColor truncate hover:font-bold'} href="#">مجله اینترنتی دیجی پی</a></li>
                 </ul>
-                <div>
-                    <button>
-                        <IconComponent name={'person'} />
-                        <IconComponent name={'chevron-down'} />
-                    </button>
-                    <div>
-                        <Image src={DropDownImage.src} alt={'ورود'} width={100} height={100} />
-                        <a href="#">
-                            <IconComponent name={'login'} />
-                            ورود به دیجی پی
-                        </a>
-                    </div>
-                </div>
+                <ClickDropdownComponent icon={'person'}>
+                    <Image className={'w-[50px]'} src={DropDownImage.src} alt={'ورود'} width={100} height={100} />
+                    <a href="#" className={'flex items-center'}>
+                        <IconComponent name={'login'} />
+                        <span className={'truncate mr-[10px] text-themeColor text-xs font-bold'}>ورود به دیجی پی</span>
+                    </a>
+                </ClickDropdownComponent>
             </HolderComponent>
         </header>
     );

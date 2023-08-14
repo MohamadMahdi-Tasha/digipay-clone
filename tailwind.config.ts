@@ -13,7 +13,14 @@ const config: Config = {
     ],
     theme: {
         colors: {
-            themeColor: '#0040FF'
+            themeColor: '#0040FF',
+            darkBlue: '#061962',
+            white: '#ffffff',
+            black: '#000000',
+            myYellow: '#FBBF24'
+        },
+        fontFamily: {
+            primary: ['yekanbakh', 'sans-serif']
         }
     },
     plugins: [],

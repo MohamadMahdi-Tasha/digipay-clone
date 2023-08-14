@@ -1,6 +1,7 @@
 // Codes By Mahdi Tasha
 // Importing Part
 import {Metadata} from "next";
+import '@/public/font/YekanBakh/yekanBakh.css';
 import '@/app/index.css';
 import React from "react";
 import HeaderComponent from "@/components/headerComponent";
@@ -25,7 +26,7 @@ export default function RootLayout({children}:propsType):React.ReactNode {
     // Returning JSX
     return (
         <html lang={'fa'}>
-            <body dir={'rtl'}>
+            <body dir={'rtl'} className={'font-primary'}>
                 <HeaderComponent />
                 {children}
             </body>
