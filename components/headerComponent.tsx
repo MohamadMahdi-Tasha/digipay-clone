@@ -28,8 +28,8 @@ export default function HeaderComponent():React.ReactNode {
 
     // Returning JSX
     return (
-        <header data-scrolled={isScrolled} className={'bg-white shadow fixed w-full  duration-500 transition-all data-[scrolled="false"]:top-0 data-[scrolled="true"]:top-[-10%]'}>
-            <a data-scrolled={isScrolled} className={'transition-all duration-500 data-[scrolled="true"]:opacity-0'} href="#"><Image src={TopSideImage.src} alt={'ضمانت تترلند'} width={1150} height={20} className={'w-full h-[70px] object-cover'} /></a>
+        <header data-scrolled={isScrolled} className={'bg-white shadow fixed w-full  duration-500 transition-all data-[scrolled="false"]:top-0 data-[scrolled="true"]:top-[-70px]'}>
+            <a data-scrolled={isScrolled} className={'transition-all duration-500 data-[scrolled="true"]:invisible data-[scrolled="false"]:visible data-[scrolled="true"]:opacity-0 data-[scrolled="false"]:opacity-100'} href="#"><Image src={TopSideImage.src} alt={'ضمانت تترلند'} width={1150} height={20} className={'w-full h-[70px] object-cover'} /></a>
             <HolderComponent className={'flex items-center justify-between gap-[20px] py-[20px]'}>
                 <MobileHeaderLinksComponent />
                 <a href="#"><Image src={TypoLogoImage.src} alt={'دیجی پی'} width={75} height={75} /></a>
