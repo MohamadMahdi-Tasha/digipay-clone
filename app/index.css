@@ -3,3 +3,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*Custom Styles*/
+.hamburger-btn {@apply w-[30px] h-[30px] relative;}
+.hamburger-line {@apply h-[2px] bg-darkBlue w-full block transition-all duration-500 absolute;}
+.hamburger-line:first-of-type {@apply top-0;}
+.hamburger-line:nth-of-type(2) {@apply top-[50%] translate-y-[50%];}
+.hamburger-line:nth-of-type(3) {@apply bottom-0;}
+.header-menu.right {@apply absolute transition-all shadow-lg lg:w-[200px] w-full right-0 lg:top-[54px] top-[148px] duration-500 data-[opened="true"]:translate-y-0 data-[opened="true"]:opacity-100 data-[opened="true"]:visible data-[opened="false"]:translate-y-[-10px] data-[opened="false"]:opacity-0 data-[opened="false"]:invisible border-t border-t-myYellow bg-white flex flex-col items-center justify-center p-[20px];}
+.header-menu.left {@apply absolute transition-all shadow-lg lg:w-[200px] w-full left-0 lg:top-[54px] top-[148px] duration-500 data-[opened="true"]:translate-y-0 data-[opened="true"]:opacity-100 data-[opened="true"]:visible data-[opened="false"]:translate-y-[-10px] data-[opened="false"]:opacity-0 data-[opened="false"]:invisible border-t border-t-myYellow bg-white flex flex-col items-center justify-center p-[20px];}
+.hamburger-btn[data-opened="true"] > .hamburger-line:first-of-type {@apply opacity-0;}
+.hamburger-btn[data-opened="true"] > .hamburger-line:nth-of-type(2) {@apply rotate-45;}
+.hamburger-btn[data-opened="true"] > .hamburger-line:nth-of-type(3) {@apply -rotate-45 bottom-[50%] translate-y-[130%];}

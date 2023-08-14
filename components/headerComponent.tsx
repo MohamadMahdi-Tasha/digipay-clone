@@ -8,6 +8,7 @@ import DropDownImage from '@/public/img/header/img-user-dropdown.svg';
 import IconComponent from "@/chunks/iconComponent";
 import TopSideImage from '@/public/img/header/img-top-side.jpg'
 import ClickDropdownComponent from "@/chunks/clickDropdownComponent";
+import MobileHeaderLinksComponent from "@/components/mobileHeaderLinksComponent";
 
 // Creating And Exporting Header Component As Default
 export default function HeaderComponent():React.ReactNode {
@@ -16,8 +17,9 @@ export default function HeaderComponent():React.ReactNode {
         <header className={'bg-white shadow'}>
             <a href="#"><Image src={TopSideImage.src} alt={'ضمانت تترلند'} width={1150} height={20} className={'w-full h-[70px] object-cover'} /></a>
             <HolderComponent className={'flex items-center justify-between gap-[20px] py-[20px]'}>
-                <Image src={TypoLogoImage.src} alt={'دیجی پی'} width={75} height={75} />
-                <ul className={'flex items-center gap-[30px]'}>
+                <MobileHeaderLinksComponent />
+                <a href="#"><Image src={TypoLogoImage.src} alt={'دیجی پی'} width={75} height={75} /></a>
+                <ul className={'lg:flex hidden items-center gap-[30px]'}>
                     <li><a className={'transition-all text-sm text-darkBlue hover:text-themeColor truncate hover:font-bold'} href="#">خدمات</a></li>
                     <li><a className={'transition-all text-sm text-darkBlue hover:text-themeColor truncate hover:font-bold'} href="#">دریافت اعتبار</a></li>
                     <li><a className={'transition-all text-sm text-darkBlue hover:text-themeColor truncate hover:font-bold'} href="#">گزارش سالانه</a></li>
