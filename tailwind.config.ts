@@ -11,7 +11,11 @@ const config: Config = {
         './chunks/**/*.{tsx,ts,js,jsx}',
         './app/*.{tsx,ts,js,jsx}',
     ],
-    theme: {},
+    theme: {
+        colors: {
+            themeColor: '#0040FF'
+        }
+    },
     plugins: [],
 }
 

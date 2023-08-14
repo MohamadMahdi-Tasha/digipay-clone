@@ -3,6 +3,7 @@
 import {Metadata} from "next";
 import '@/app/index.css';
 import React from "react";
+import HeaderComponent from "@/components/headerComponent";
 
 // Creating And Exporting Meta Data Of Page
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ export default function RootLayout({children}:propsType):React.ReactNode {
     return (
         <html lang={'fa'}>
             <body dir={'rtl'}>
+                <HeaderComponent />
                 {children}
             </body>
         </html>
