@@ -17,7 +17,9 @@ const config: Config = {
             darkBlue: '#061962',
             white: '#ffffff',
             black: '#000000',
-            myYellow: '#FBBF24'
+            myYellow: '#FBBF24',
+            lightBlue: '#e7ecfd',
+            mediumBlue: '#b1bfef'
         },
         fontFamily: {
             primary: ['yekanbakh', 'sans-serif']
