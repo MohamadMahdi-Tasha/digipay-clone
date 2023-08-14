@@ -1,6 +1,8 @@
 // Codes By Mahdi Tasha
+// Importing Part
 import {Metadata} from "next";
 import '@/app/index.css';
+import React from "react";
 
 // Creating And Exporting Meta Data Of Page
 export const metadata: Metadata = {
@@ -18,7 +20,7 @@ interface propsType {
 }
 
 // Creating Root Layout Of Pages And Exporting It A Default
-export default function RootLayout({children}:propsType) {
+export default function RootLayout({children}:propsType):React.ReactNode {
     // Returning JSX
     return (
         <html lang={'fa'}>
