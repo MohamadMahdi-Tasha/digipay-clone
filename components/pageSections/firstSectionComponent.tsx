@@ -1,7 +1,4 @@
 // Codes By Mahdi Tasha
-// Forcing Next.js To Render This Component As Client Side Component
-'use client';
-
 // Importing Part
 import React from "react";
 import 'swiper/css';

@@ -3,7 +3,7 @@
 'use client';
 
 // Importing Part
-import React, {useState, useRef} from "react";
+import React, {useState} from "react";
 import HolderComponent from "@/chunks/holderComponent";
 import Image from "next/image";
 import TypoLogoImage from '@/public/img/header/img-logo-typo.svg';
@@ -12,11 +12,13 @@ import IconComponent from "@/chunks/iconComponent";
 import TopSideImage from '@/public/img/header/img-top-side.jpg'
 import ClickDropdownComponent from "@/chunks/clickDropdownComponent";
 import MobileHeaderLinksComponent from "@/components/mobileHeaderLinksComponent";
+import ServicesHeaderComponent from '@/components/servicesHeaderComponent';
 
 // Creating And Exporting Header Component As Default
 export default function HeaderComponent():React.ReactNode {
     // Defining State Of Component
     const [isScrolled, setScrolled] = useState(false);
+    const [isServicesItemHovered, setServicesItemHovered] = useState(false);
 
     // Checking If Window Is Scrolled
     window.addEventListener('scroll', () => {
@@ -33,10 +35,10 @@ export default function HeaderComponent():React.ReactNode {
                 <MobileHeaderLinksComponent />
                 <a href="#"><Image src={TypoLogoImage.src} alt={'دیجی پی'} width={75} height={75} /></a>
                 <ul className={'lg:flex hidden items-center gap-[30px]'}>
-                    <li><a className={'transition-all text-sm text-darkBlue hover:text-themeColor truncate hover:font-bold'} href="#">خدمات</a></li>
-                    <li><a className={'transition-all text-sm text-darkBlue hover:text-themeColor truncate hover:font-bold'} href="#">دریافت اعتبار</a></li>
-                    <li><a className={'transition-all text-sm text-darkBlue hover:text-themeColor truncate hover:font-bold'} href="#">گزارش سالانه</a></li>
-                    <li><a className={'transition-all text-sm text-darkBlue hover:text-themeColor truncate hover:font-bold'} href="#">مجله اینترنتی دیجی پی</a></li>
+                    <li onMouseEnter={() => setServicesItemHovered(true)} onMouseLeave={() => setServicesItemHovered(false)}><a data-active={isServicesItemHovered} className={'transition-all text-sm data-[active="false"]:text-darkBlue truncate data-[active="true"]:text-themeColor'} href="#">خدمات</a></li>
+                    <li><a className={'transition-all text-sm text-darkBlue truncate'} href="#">دریافت اعتبار</a></li>
+                    <li><a className={'transition-all text-sm text-darkBlue truncate'} href="#">گزارش سالانه</a></li>
+                    <li><a className={'transition-all text-sm text-darkBlue truncate'} href="#">مجله اینترنتی دیجی پی</a></li>
                 </ul>
                 <ClickDropdownComponent icon={'person'}>
                     <Image className={'w-[50px]'} src={DropDownImage.src} alt={'ورود'} width={100} height={100} />
@@ -46,6 +48,7 @@ export default function HeaderComponent():React.ReactNode {
                     </a>
                 </ClickDropdownComponent>
             </HolderComponent>
+            <ServicesHeaderComponent onMouseEnter={() => setServicesItemHovered(true)} onMouseLeave={() => setServicesItemHovered(false)} isOpened={isServicesItemHovered} />
         </header>
     );
 }
