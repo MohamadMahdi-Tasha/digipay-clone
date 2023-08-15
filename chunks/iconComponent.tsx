@@ -45,5 +45,15 @@ export default function IconComponent({name}:typeofProps):React.ReactNode {
                 <path d="M7.07506 12.0341L3.0425 8.07155L7.03115 4.06484" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
         );
+    } else if (name === 'calender') {
+        return (
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.0628 2.375V4.75" stroke="#AFB9C5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M5.93783 2.375V4.75" stroke="#AFB9C5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M13.0625 12.6667H5.9375" stroke="#AFB9C5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M13.0625 9.49996H5.9375" stroke="#AFB9C5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <rect x="2.375" y="3.5625" width="14.25" height="13.0625" rx="3" stroke="#AFB9C5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+        );
     }
 }
