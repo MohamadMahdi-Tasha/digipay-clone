@@ -17,33 +17,33 @@ interface propsType {
 export default function ServicesHeaderComponent({isOpened, onMouseEnter, onMouseLeave}:propsType):React.ReactNode {
     // Returning JSX
     return (
-        <div data-opened={isOpened} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+        <div data-opened={isOpened} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className={'border-t transition-all duration-500 border-t-myYellow shadow-lg h-[80vh] overflow-auto lg:block hidden data-[opened="true"]:visible data-[opened="true"]:opacity-100 data-[opened="false"]:invisible data-[opened="false"]:h-[0] data-[opened="false"]:opacity-0'}>
             <HolderComponent>
-                <div>
-                    <div>
-                        <button>
-                            <div>
-                                <span>خدمات مالی و پرداختی</span>
-                                <span>انجام تراکنش های روزمره</span>
+                <div className={'flex'}>
+                    <div className={'w-[25%] border-l border-l-darkBlue/20 p-[20px] flex flex-col gap-[20px] h-full overflow-auto'}>
+                        <button className={'flex items-center gap-[10px] justify-between w-full transition-all p-[20px] rounded-[20px] bg-white hover:bg-lightBlue'}>
+                            <div className={'overflow-hidden w-[75%]'}>
+                                <span className={'text-darkBlue text-[15px] truncate text-start font-light block mb-[10px]'}>خدمات مالی و پرداختی</span>
+                                <span className={'text-darkBlue/80 text-[10px] truncate text-start font-light block'}>انجام تراکنش های روزمره</span>
                             </div>
                             <IconComponent name={'left-arrow'} />
                         </button>
-                        <button>
-                            <div>
-                                <span>خدمات سازمانی</span>
-                                <span>برای کارمندان سازمان شما</span>
+                        <button className={'flex items-center gap-[10px] justify-between w-full transition-all p-[20px] rounded-[20px] bg-white hover:bg-lightBlue'}>
+                            <div className={'overflow-hidden w-[75%]'}>
+                                <span className={'text-darkBlue text-[15px] truncate text-start font-light block mb-[10px]'}>خدمات سازمانی</span>
+                                <span className={'text-darkBlue/80 text-[10px] truncate text-start font-light block'}>برای کارمندان سازمان شما</span>
                             </div>
                             <IconComponent name={'left-arrow'} />
                         </button>
-                        <button>
-                            <div>
-                                <span>خدمات کسب و کار های انلاین</span>
-                                <span>برای صاحبان سایت های فروشگاهی</span>
+                        <button className={'flex items-center gap-[10px] justify-between w-full transition-all p-[20px] rounded-[20px] bg-white hover:bg-lightBlue'}>
+                            <div className={'overflow-hidden w-[75%]'}>
+                                <span className={'text-darkBlue text-[15px] truncate text-start font-light block mb-[10px]'}>خدمات کسب و کار های انلاین</span>
+                                <span className={'text-darkBlue/80 text-[10px] truncate text-start font-light block'}>برای صاحبان سایت های فروشگاهی</span>
                             </div>
                             <IconComponent name={'left-arrow'} />
                         </button>
                     </div>
-                    <div>
+                    <div className={'grid grid-cols-3 gap-[20px] w-[75%] p-[20px]'}>
                         <ServicesHeaderIconComponent icon={'cart'} title={'کارت به کارت'} subtitle={'پشتیبانی از ۳۰+ بانک ایران'} />
                         <ServicesHeaderIconComponent icon={'radio'} title={'خرید بسته اینترنت'} subtitle={'ایرانسل, همراه اول و رایتل'} />
                         <ServicesHeaderIconComponent icon={'car'} title={'پرداخت عوارض جاده ای'} subtitle={'استعلام و پرداخت عوارض'} />
@@ -56,8 +56,8 @@ export default function ServicesHeaderComponent({isOpened, onMouseEnter, onMouse
                         <ServicesHeaderIconComponent icon={'cardTimer'} title={'الان بخر بعدا پرداخت کن'} subtitle={'بازپرداخت یکم تا پنجم ماه بعد'} />
                     </div>
                 </div>
-                <ServicesHeaderFooterComponent />
             </HolderComponent>
+            <ServicesHeaderFooterComponent />
         </div>
     );
 }

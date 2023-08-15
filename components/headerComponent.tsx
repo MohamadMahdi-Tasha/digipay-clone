@@ -31,11 +31,11 @@ export default function HeaderComponent():React.ReactNode {
     return (
         <header data-scrolled={isScrolled} className={'bg-white shadow fixed w-full z-[9999] duration-500 transition-all data-[scrolled="false"]:top-0 data-[scrolled="true"]:top-[-70px]'}>
             <a data-scrolled={isScrolled} className={'transition-all duration-500 data-[scrolled="true"]:invisible data-[scrolled="false"]:visible data-[scrolled="true"]:opacity-0 data-[scrolled="false"]:opacity-100'} href="#"><Image src={TopSideImage.src} alt={'ضمانت تترلند'} width={1150} height={20} className={'w-full h-[70px] object-cover'} /></a>
-            <HolderComponent className={'flex items-center justify-between gap-[20px] py-[20px]'}>
+            <HolderComponent className={'flex items-center justify-between gap-[20px] lg:py-0 py-[20px]'}>
                 <MobileHeaderLinksComponent />
                 <a href="#"><Image src={TypoLogoImage.src} alt={'دیجی پی'} width={75} height={75} /></a>
                 <ul className={'lg:flex hidden items-center gap-[30px]'}>
-                    <li onMouseEnter={() => setServicesItemHovered(true)} onMouseLeave={() => setServicesItemHovered(false)}><a data-active={isServicesItemHovered} className={'transition-all text-sm data-[active="false"]:text-darkBlue truncate data-[active="true"]:text-themeColor'} href="#">خدمات</a></li>
+                    <li className={'h-[85px] flex items-center justify-center'} onMouseEnter={() => setServicesItemHovered(true)} onMouseLeave={() => setServicesItemHovered(false)}><a data-active={isServicesItemHovered} className={'transition-all text-sm data-[active="false"]:text-darkBlue truncate data-[active="true"]:text-themeColor'} href="#">خدمات</a></li>
                     <li><a className={'transition-all text-sm text-darkBlue truncate'} href="#">دریافت اعتبار</a></li>
                     <li><a className={'transition-all text-sm text-darkBlue truncate'} href="#">گزارش سالانه</a></li>
                     <li><a className={'transition-all text-sm text-darkBlue truncate'} href="#">مجله اینترنتی دیجی پی</a></li>

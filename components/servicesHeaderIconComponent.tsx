@@ -25,26 +25,27 @@ interface propsType {
 export default function ServicesHeaderIconComponent({title, subtitle, icon}:propsType):React.ReactNode {
     // Small Inner Component
     function RightSideIconComponent():React.ReactNode {
-        // Condition To Set Icon Image
+        // Condition To Set Icon Image And Its Bg
         let image;
+        let bg;
 
         switch (icon) {
-            case "cart" : image = cardImage.src;break;
-            case "car" : image = carImage.src;break;
-            case "sim" : image = simImage.src;break;
-            case "phone" : image = phoneImage.src;break;
-            case "radio" : image = radioImage.src;break;
-            case "cardHolder" : image = cartHolderImage.src;break;
-            case "cardTimer" : image = cartTimerImage.src;break;
-            case "calender" : image = calenderImage.src;break;
-            case "name" : image = nameImage.src;break;
-            case "umbrella" : image = umbrellaImage.src;break;
+            case "cart" : image = cardImage.src;bg = 'bg-lightGreen';break;
+            case "car" : image = carImage.src;bg = 'bg-lightBlue';break;
+            case "sim" : image = simImage.src;bg = 'bg-lightOrange';break;
+            case "phone" : image = phoneImage.src;bg = 'bg-lightOrange';break;
+            case "radio" : image = radioImage.src;bg = 'bg-lightOrange';break;
+            case "cardHolder" : image = cartHolderImage.src;bg = 'bg-lightGreen';break;
+            case "cardTimer" : image = cartTimerImage.src;bg = 'bg-lightBlue';break;
+            case "calender" : image = calenderImage.src;bg = 'bg-lightBlue';break;
+            case "name" : image = nameImage.src;bg = 'bg-lightOrange';break;
+            case "umbrella" : image = umbrellaImage.src;bg = 'bg-lightBlue';break;
         }
 
         // Returning JSX
         return (
-            <div>
-                <img src={image} alt={title}/>
+            <div className={`w-[50px] rounded-[10px] ml-[10px] aspect-square ${bg}`}>
+                <img src={image} className={'w-full h-full'} alt={title}/>
             </div>
         );
     }
@@ -52,15 +53,17 @@ export default function ServicesHeaderIconComponent({title, subtitle, icon}:prop
     // Returning JSX
     return (
         <a href={'#'}>
-            <button tabIndex={-1}>
-                <div>
+            <button className={'flex gap-[10px] justify-between items-center w-[300px] [&>div:last-of-type]:hover:opacity-100'} tabIndex={-1}>
+                <div className={'flex gap-[10px] items-center w-[75%]'}>
                     <RightSideIconComponent />
-                    <div>
-                        <span>{title}</span>
-                        <span>{subtitle}</span>
+                    <div className={'w-full overflow-hidden'}>
+                        <span className={'block text-[16px] truncate font-normal text-darkBlue text-start'}>{title}</span>
+                        <span className={'block text-[12px] truncate font-light text-darkBlue text-start'}>{subtitle}</span>
                     </div>
                 </div>
-                <IconComponent name={'arrow-left'}/>
+                <div className={'w-[25%] opacity-0 transition-all'}>
+                    <IconComponent name={'left-arrow'} />
+                </div>
             </button>
         </a>
     );
