@@ -14,6 +14,7 @@ import ClickDropdownComponent from "@/chunks/clickDropdownComponent";
 import MobileHeaderLinksComponent from "@/components/mobileHeaderLinksComponent";
 import ServicesHeaderComponent from '@/components/servicesHeaderComponent';
 import CollectHeaderComponent from '@/components/collectHeaderComponent';
+import YearlyReportHeaderComponent from '@/components/yearlyReportHeaderComponent';
 
 // Creating And Exporting Header Component As Default
 export default function HeaderComponent():React.ReactNode {
@@ -21,6 +22,7 @@ export default function HeaderComponent():React.ReactNode {
     const [isScrolled, setScrolled] = useState(false);
     const [isServicesItemHovered, setServicesItemHovered] = useState(false);
     const [isCollectItemHovered, setCollectItemHovered] = useState(false);
+    const [isYearlyReportHovered, setYearlyReportHovered] = useState(false);
 
     // Checking If Window Is Scrolled
     window.addEventListener('scroll', () => {
@@ -39,7 +41,7 @@ export default function HeaderComponent():React.ReactNode {
                 <ul className={'lg:flex hidden items-center gap-[30px]'}>
                     <li className={'h-[85px] flex items-center justify-center'} onMouseEnter={() => setServicesItemHovered(true)} onMouseLeave={() => setServicesItemHovered(false)}><a data-active={isServicesItemHovered} className={'transition-all text-sm data-[active="false"]:text-darkBlue truncate data-[active="true"]:text-themeColor'} href="#">خدمات</a></li>
                     <li className={'h-[85px] flex items-center justify-center'} onMouseEnter={() => setCollectItemHovered(true)} onMouseLeave={() => setCollectItemHovered(false)}><a data-active={isCollectItemHovered} className={'transition-all text-sm data-[active="true"]:text-themeColor text-darkBlue truncate'} href="#">دریافت اعتبار</a></li>
-                    <li className={'h-[85px] flex items-center justify-center'} onMouseEnter={() => setServicesItemHovered(true)} onMouseLeave={() => setServicesItemHovered(false)}><a data-active={isServicesItemHovered} className={'transition-all text-sm data-[active="true"]:text-themeColor text-darkBlue truncate'} href="#">گزارش سالانه</a></li>
+                    <li className={'h-[85px] flex items-center justify-center'} onMouseEnter={() => setYearlyReportHovered(true)} onMouseLeave={() => setYearlyReportHovered(false)}><a data-active={isYearlyReportHovered} className={'transition-all text-sm data-[active="true"]:text-themeColor text-darkBlue truncate'} href="#">گزارش سالانه</a></li>
                     <li className={'h-[85px] flex items-center justify-center'} onMouseEnter={() => setServicesItemHovered(true)} onMouseLeave={() => setServicesItemHovered(false)}><a data-active={isServicesItemHovered} className={'transition-all text-sm data-[active="true"]:text-themeColor text-darkBlue truncate'} href="#">مجله اینترنتی دیجی پی</a></li>
                 </ul>
                 <ClickDropdownComponent icon={'person'}>
@@ -52,6 +54,7 @@ export default function HeaderComponent():React.ReactNode {
             </HolderComponent>
             <ServicesHeaderComponent onMouseEnter={() => setServicesItemHovered(true)} onMouseLeave={() => setServicesItemHovered(false)} isOpened={isServicesItemHovered} />
             <CollectHeaderComponent onMouseEnter={() => setCollectItemHovered(true)} onMouseLeave={() => setCollectItemHovered(false)} isOpened={isCollectItemHovered} />
+            <YearlyReportHeaderComponent onMouseEnter={() => setYearlyReportHovered(true)} onMouseLeave={() => setYearlyReportHovered(false)} isOpened={isYearlyReportHovered} />
         </header>
     );
 }
