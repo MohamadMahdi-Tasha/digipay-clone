@@ -53,7 +53,7 @@ export default function ServicesHeaderComponent({isOpened, onMouseEnter, onMouse
                         <ServicesHeaderIconComponent icon={'calender'} title={'خرید اقساطی از دیجیکالا'} subtitle={'پرداهت اعتباری ۲۴-۱۲ ماهه'} />
                         <ServicesHeaderIconComponent icon={'umbrella'} title={'بیمه تجهیزات الکترونیک'} subtitle={'محصولات دیجیتالی دیجیکالا'} />
                         <ServicesHeaderIconComponent icon={'phone'} title={'پرداخت قبض موبایل'} subtitle={'ایرانسل, همراه اول و رایتل'} />
-                        <ServicesHeaderIconComponent icon={'cartTimer'} title={'الان بخر بعدا پرداخت کن'} subtitle={'بازپرداخت یکم تا پنجم ماه بعد'} />
+                        <ServicesHeaderIconComponent icon={'cardTimer'} title={'الان بخر بعدا پرداخت کن'} subtitle={'بازپرداخت یکم تا پنجم ماه بعد'} />
                     </div>
                 </div>
                 <ServicesHeaderFooterComponent />

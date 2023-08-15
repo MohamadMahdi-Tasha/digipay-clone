@@ -2,6 +2,17 @@
 // Importing Part
 import React from "react";
 import IconComponent from "@/chunks/iconComponent";
+import cardImage from '@/public/img/services/img-card.png';
+import carImage from '@/public/img/services/img-car.png';
+import simImage from '@/public/img/services/img-sim.png';
+import phoneImage from '@/public/img/services/img-phone.png';
+import radioImage from '@/public/img/services/img-radio.png';
+import cartHolderImage from '@/public/img/services/img-cardHolder.png';
+import cartTimerImage from '@/public/img/services/img-cardTimer.png';
+import calenderImage from '@/public/img/services/img-calender.png';
+import nameImage from '@/public/img/services/img-name.png';
+import umbrellaImage from '@/public/img/services/img-umbrella.png';
+
 
 // Defining Types Of Props
 interface propsType {
@@ -18,21 +29,22 @@ export default function ServicesHeaderIconComponent({title, subtitle, icon}:prop
         let image;
 
         switch (icon) {
-            case "cart" : image = require('@/public/img/services/img-card.png');break;
-            case "sim" : image = require('@/public/img/services/img-sim.png');break;
-            case "phone" : image = require('@/public/img/services/img-phone.png');break;
-            case "radio" : image = require('@/public/img/services/img-radio.png');break;
-            case "cartHolder" : image = require('@/public/img/services/img-cartHolder.png');break;
-            case "cartTimer" : image = require('@/public/img/services/img-cartTimer.png');break;
-            case "calender" : image = require('@/public/img/services/img-calender.png');break;
-            case "name" : image = require('@/public/img/services/img-name.png');break;
-            case "umbrella" : image = require('@/public/img/services/img-umbrella.png');break;
+            case "cart" : image = cardImage.src;break;
+            case "car" : image = carImage.src;break;
+            case "sim" : image = simImage.src;break;
+            case "phone" : image = phoneImage.src;break;
+            case "radio" : image = radioImage.src;break;
+            case "cardHolder" : image = cartHolderImage.src;break;
+            case "cardTimer" : image = cartTimerImage.src;break;
+            case "calender" : image = calenderImage.src;break;
+            case "name" : image = nameImage.src;break;
+            case "umbrella" : image = umbrellaImage.src;break;
         }
 
         // Returning JSX
         return (
             <div>
-                <img src={image.src} alt="عکس کارت"/>
+                <img src={image} alt={title}/>
             </div>
         );
     }
