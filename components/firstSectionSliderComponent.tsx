@@ -4,6 +4,7 @@
 
 // Importing Part
 import {Swiper, SwiperSlide} from "swiper/react";
+import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import React from "react";
 import FirstSectionSlideComponent from '@/components/firstSectionSlideComponent';
@@ -22,12 +23,23 @@ export default function FirstSectionSliderComponent():React.ReactNode {
         <div className={'relative'}>
             <div className={'w-[300px] bg-gradient-to-l from-lightBlue absolute top-[-50%] right-0 h-[500px] z-[99] pointer-events-none'} />
             <Swiper
-                slidesPerView={5}
+                modules={[Pagination]}
+                breakpoints={{
+                    991: {
+                        slidesPerView: 5,
+                        spaceBetween: 30,
+                        initialSlide: 3
+                    },
+                    0: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                        initialSlide: 2
+                    }
+                }}
                 centeredSlides={true}
-                initialSlide={3}
-                spaceBetween={30}
                 className={'first-section-slider'}
                 autoplay={true}
+                pagination={true}
             >
                 <SwiperSlide><FirstSectionSlideComponent img={SimImage.src} title={'خرید شارژ'} subtitle={'با امکان تنظیم یاد اور'} /></SwiperSlide>
                 <SwiperSlide><FirstSectionSlideComponent img={CartImage.src} title={'کارت به کارت'} subtitle={'با پوشش بیش از ۲۰ کارت بانکی'} /></SwiperSlide>
