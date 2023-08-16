@@ -36,8 +36,8 @@ export default function SecondSectionComponent():React.ReactNode {
                     <h4 className={'text-center text-darkBlue text-[24px] font-light'}>شروع تحولی محسوس در کسب وا کارتان</h4>
                 </header>
                 <main>
-                    <div className={'flex gap-[30px] items-center mb-[100px]'}>
-                        <div className={'w-[25%] flex flex-col gap-[20px]'}>
+                    <div className={'flex lg:flex-row flex-col gap-[30px] items-center mb-[100px]'}>
+                        <div className={'lg:w-[25%] w-full flex flex-col gap-[20px]'}>
                             <SecondSectionFeaturesBtnComponent onClick={() => {
                                 setFeatures1Active(true);
                                 setFeatures2Active(false);

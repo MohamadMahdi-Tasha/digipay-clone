@@ -16,10 +16,10 @@ export default function SecondSectionFeatureComponent({name}:propsType):React.Re
     // Conditional Rendering JSX
     if (name === 'third') {
         return (
-            <div className={'p-[30px] border rounded-[20px] border-darkBlue/20'}>
+            <div className={'p-[30px] border rounded-[20px] border-darkBlue/20 lg:w-[75%] w-full'}>
                 <h4 className={'font-extrabold text-darkBlue/50 mb-[20px] text-[34px] truncate w-[20ch] overflow-hidden'}>آسان شدن فرآیند تمدید سرویس‌های اشتراکی</h4>
-                <div className={'flex gap-[30px] items-center'}>
-                    <div className={'w-[75%]'}>
+                <div className={'flex gap-[30px] items-center lg:flex-row flex-col'}>
+                    <div className={'lg:w-[75%] w-full'}>
                         <div className={'border rounded-[20px] border-darkBlue/20 p-[20px] flex flex-wrap gap-[20px] mb-[30px]'}>
                             <span className={'flex items-center gap-[10px]'}>
                                 <IconComponent name={'check'} />
@@ -35,18 +35,18 @@ export default function SecondSectionFeatureComponent({name}:propsType):React.Re
                             </span>
                         </div>
                         <p className={'text-darkBlue/50 font-light text-[16px] mb-[30px] line-clamp-3'}>پرداخت حق عضویت یا درگاه پرداخت اشتراک، برای کسب و کارهایی که خدمات خود را در قالب بسته‌های اشتراک ارائه می‌دهند، طراحی شده است. این سرویس طی یک قرارداد سه جانبه، مجوز برداشت خودکار از کیف پول دیجی‌پی کاربر را با تأیید وی و به منظور پرداخت دوره‌ای خدمات مختلف دریافت می‌کند.</p>
-                        <a href="#"><button className={'px-[20px] py-[10px] text-[16px] font-normal bg-themeColor text-white rounded-[10px]'} tabIndex={-1}>درگاه پرداخت اشتراک</button></a>
+                        <a href="#" className={'lg:inline block'}><button className={'px-[20px] lg:w-auto w-full text-center py-[10px] text-[16px] font-normal bg-themeColor text-white rounded-[10px]'} tabIndex={-1}>درگاه پرداخت اشتراک</button></a>
                     </div>
-                    <img className={'w-[25%]'} src={ThirdImage.src} alt="آسان شدن فرآیند تمدید سرویس‌های اشتراکی"/>
+                    <img className={'lg:w-[25%] w-full'} src={ThirdImage.src} alt="آسان شدن فرآیند تمدید سرویس‌های اشتراکی"/>
                 </div>
             </div>
         );
     } else if (name === 'second') {
         return (
-            <div className={'p-[30px] border rounded-[20px] border-darkBlue/20'}>
+            <div className={'p-[30px] border rounded-[20px] border-darkBlue/20 lg:w-[75%] w-full'}>
                 <h4 className={'font-extrabold text-darkBlue/50 mb-[20px] text-[34px] truncate w-[20ch] overflow-hidden'}>با اعتبار دیجی پی,از دیجی کالا قسطی خرید کنید</h4>
-                <div className={'flex gap-[30px] items-center'}>
-                    <div className={'w-[75%]'}>
+                <div className={'flex gap-[30px] items-center lg:flex-row flex-col'}>
+                    <div className={'lg:w-[75%] w-full'}>
                         <div className={'border rounded-[20px] border-darkBlue/20 p-[20px] flex flex-wrap gap-[20px] mb-[30px]'}>
                             <span className={'flex items-center gap-[10px]'}>
                                 <IconComponent name={'check'} />
@@ -66,18 +66,18 @@ export default function SecondSectionFeatureComponent({name}:propsType):React.Re
                             </span>
                         </div>
                         <p className={'text-darkBlue/50 font-light text-[16px] mb-[30px] line-clamp-3'}>شرکت دیجی‌پی امکان خرید اقساطی کارکنان سازمان‌ها روی دیجی‌کالا و با امکان انتخاب از بستری شامل 8 میلیون کالا، در سرتاسر کشور فراهم نموده است. جهت استفاده از این سرویس کافیست سازمان‌ها با دیجی‌پی، تفاهم نامه همکاری داشته باشد. بدین‌ترتیب کارکنان، بدون نیاز به چک یا سفته ضمانت و فقط با ارائه مدارک هویتی و فیش حقوقی و ضمانت سازمان، امکان خرید تا سقف ۳۰ میلیون تومان و بازپرداخت در بلند مدت را خواهند داشت .</p>
-                        <a href="#"><button className={'px-[20px] py-[10px] text-[16px] font-normal bg-themeColor text-white rounded-[10px]'} tabIndex={-1}>اطلاعات بیشتر</button></a>
+                        <a href="#" className={'lg:inline block'}><button className={'px-[20px] lg:w-auto w-full text-center py-[10px] text-[16px] font-normal bg-themeColor text-white rounded-[10px]'} tabIndex={-1}>اطلاعات بیشتر</button></a>
                     </div>
-                    <img className={'w-[25%]'} src={SecondImage.src} alt="با اعتبار دیجی پی,از دیجی کالا قسطی خرید کنید"/>
+                    <img className={'lg:w-[25%] w-full'} src={SecondImage.src} alt="با اعتبار دیجی پی,از دیجی کالا قسطی خرید کنید"/>
                 </div>
             </div>
         );
     } else if (name === 'first') {
         return (
-            <div className={'p-[30px] border rounded-[20px] border-darkBlue/20'}>
+            <div className={'p-[30px] border rounded-[20px] border-darkBlue/20 lg:w-[75%] w-full'}>
                 <h4 className={'font-extrabold text-darkBlue/50 mb-[20px] text-[34px] truncate w-[20ch] overflow-hidden'}>آسان شدن فرآیند تمدید سرویس‌های اشتراکی</h4>
-                <div className={'flex gap-[30px] items-center'}>
-                    <div className={'w-[75%]'}>
+                <div className={'flex gap-[30px] items-center lg:flex-row flex-col'}>
+                    <div className={'lg:w-[75%] w-full'}>
                         <div className={'border rounded-[20px] border-darkBlue/20 p-[20px] flex flex-wrap gap-[20px] mb-[30px]'}>
                             <span className={'flex items-center gap-[10px]'}>
                                 <IconComponent name={'check'} />
@@ -93,9 +93,9 @@ export default function SecondSectionFeatureComponent({name}:propsType):React.Re
                             </span>
                         </div>
                         <p className={'text-darkBlue/50 font-light text-[16px] mb-[30px] line-clamp-3'}>پرداخت حق عضویت یا درگاه پرداخت اشتراک، برای کسب و کارهایی که خدمات خود را در قالب بسته‌های اشتراک ارائه می‌دهند، طراحی شده است. این سرویس طی یک قرارداد سه جانبه، مجوز برداشت خودکار از کیف پول دیجی‌پی کاربر را با تأیید وی و به منظور پرداخت دوره‌ای خدمات مختلف دریافت می‌کند.</p>
-                        <a href="#"><button className={'px-[20px] py-[10px] text-[16px] font-normal bg-themeColor text-white rounded-[10px]'} tabIndex={-1}>درگاه پرداخت هوشمند</button></a>
+                        <a href="#" className={'lg:inline block'}><button className={'px-[20px] lg:w-auto w-full text-center py-[10px] text-[16px] font-normal bg-themeColor text-white rounded-[10px]'} tabIndex={-1}>درگاه پرداخت هوشمند</button></a>
                     </div>
-                    <img className={'w-[25%]'} src={FirstImage.src} alt="آسان شدن فرآیند تمدید سرویس‌های اشتراکی"/>
+                    <img className={'lg:w-[25%] w-full'} src={FirstImage.src} alt="آسان شدن فرآیند تمدید سرویس‌های اشتراکی"/>
                 </div>
             </div>
         );
