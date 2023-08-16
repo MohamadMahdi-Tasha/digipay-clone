@@ -17,7 +17,7 @@ interface propsType {
 export default function ServicesHeaderComponent({isOpened, onMouseEnter, onMouseLeave}:propsType):React.ReactNode {
     // Returning JSX
     return (
-        <div data-opened={isOpened} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className={'border-t transition-all duration-500 border-t-myYellow shadow-lg h-[400px] overflow-auto lg:block hidden data-[opened="true"]:visible data-[opened="true"]:opacity-100 data-[opened="false"]:invisible data-[opened="false"]:h-[0] data-[opened="false"]:opacity-0'}>
+        <div data-opened={isOpened} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className={'border-t transition-all duration-500 border-t-myYellow shadow-lg data-[opened="false"]:translate-y-[-100px] overflow-auto lg:block hidden data-[opened="true"]:visible data-[opened="true"]:opacity-100 data-[opened="false"]:invisible data-[opened="false"]:h-[0] data-[opened="false"]:opacity-0'}>
             <HolderComponent>
                 <div className={'flex'}>
                     <div className={'w-[25%] border-l border-l-darkBlue/20 p-[20px] flex flex-col gap-[20px] h-full overflow-auto'}>

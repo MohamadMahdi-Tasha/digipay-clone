@@ -18,7 +18,7 @@ interface propsType {
 export default function CollectHeaderComponent({isOpened, onMouseEnter, onMouseLeave}:propsType):React.ReactNode {
     // Returning JSX
     return (
-        <div data-opened={isOpened} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className={'border-t transition-all duration-500 border-t-myYellow shadow-lg h-[250px] overflow-auto lg:block hidden data-[opened="true"]:visible data-[opened="true"]:opacity-100 data-[opened="false"]:invisible data-[opened="false"]:h-[0] data-[opened="false"]:opacity-0'}>
+        <div data-opened={isOpened} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className={'border-t transition-all duration-500 border-t-myYellow shadow-lg data-[opened="false"]:translate-y-[-100px] overflow-auto lg:block hidden data-[opened="true"]:visible data-[opened="true"]:opacity-100 data-[opened="false"]:invisible data-[opened="false"]:h-[0] data-[opened="false"]:opacity-0'}>
             <HolderComponent className={'flex gap-[20px] p-[20px]'}>
                 <div className={'w-[75%]'}>
                     <span className={'font-bold text-[24px] mb-[10px] text-darkBlue'}>دریافت وام ۵۰ ملیون تومانی</span>

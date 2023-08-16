@@ -9,7 +9,7 @@ import FirstSectionSliderComponent from "@/components/firstSectionSliderComponen
 export default function FirstSectionComponent():React.ReactNode {
     // Returning JSx
     return (
-        <section className={'pt-[200px] pb-[100px] bg-lightBlue'}>
+        <section className={'pt-[200px] pb-[100px] bg-lightBlue overflow-hidden'}>
             <HolderComponent>
                 <header className={'mb-[120px]'}>
                     <h6 className={'text-darkBlue mb-[10px] text-center text-[28px] font-normal'}>تراکنش‌های هوشمندانه و سریع با</h6>
