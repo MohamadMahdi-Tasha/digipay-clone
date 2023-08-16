@@ -19,27 +19,27 @@ export default function ThirdSectionComponent():React.ReactNode {
     // Returning JSX
     return (
         <section className={'py-[50px] bg-lightBlue'}>
-            <HolderComponent className={'flex justify-between items-center gap-[30px]'}>
-                <Image className={'w-[50%]'} src={RightSideImage.src} alt={'دیجی پی دانلود'} width={100} height={100} />
-                <div className={'w-[50%]'}>
+            <HolderComponent className={'flex lg:flex-row flex-col justify-between items-center gap-[30px]'}>
+                <Image className={'lg:w-[50%] w-full'} src={RightSideImage.src} alt={'دیجی پی دانلود'} width={100} height={100} />
+                <div className={'lg:w-[50%] w-full'}>
                     <h4 className={'text-center text-darkBlue text-[30px] mb-[20px] font-extrabold'}>دانلود اپلیکیشن دیجی‌پی</h4>
                     <h5 className={'text-center text-darkBlue/80 text-[24px] mb-[40px] font-light'}>در دسترس برای همه گوشی ها</h5>
-                    <div className={'flex justify-center items-center gap-[20px] mb-[50px]'}>
+                    <div className={'flex justify-center items-center gap-[20px] mb-[50px] overflow-auto'}>
                         <button onClick={() => {
                             setAndroidActive(true);
                             setIosActive(false);
                             setWeb1Active(false);
-                        }} data-active={isAndroidActive} className={'flex transition-all data-[active="true"]:bg-themeColor data-[active="true"]:text-white data-[active="true"]:border-themeColor items-center rounded-[50rem] border-darkBlue border gap-[10px] py-[10px] px-[20px] truncate text-darkBlue font-light text-[16px]'}><IconComponent name={'android'} />اندروید</button>
+                        }} data-active={isAndroidActive} className={'flex shrink-0 transition-all data-[active="true"]:bg-themeColor data-[active="true"]:text-white data-[active="true"]:border-themeColor items-center rounded-[50rem] border-darkBlue border gap-[10px] py-[10px] px-[20px] truncate text-darkBlue font-light text-[16px]'}><IconComponent name={'android'} />اندروید</button>
                         <button onClick={() => {
                             setAndroidActive(false);
                             setIosActive(true);
                             setWeb1Active(false);
-                        }} data-active={isIosActive} className={'flex transition-all data-[active="true"]:bg-themeColor data-[active="true"]:text-white data-[active="true"]:border-themeColor items-center rounded-[50rem] border-darkBlue border gap-[10px] py-[10px] px-[20px] truncate text-darkBlue font-light text-[16px]'}><IconComponent name={'ios'} />ایفون</button>
+                        }} data-active={isIosActive} className={'flex shrink-0 transition-all data-[active="true"]:bg-themeColor data-[active="true"]:text-white data-[active="true"]:border-themeColor items-center rounded-[50rem] border-darkBlue border gap-[10px] py-[10px] px-[20px] truncate text-darkBlue font-light text-[16px]'}><IconComponent name={'ios'} />ایفون</button>
                         <button onClick={() => {
                             setAndroidActive(false);
                             setIosActive(false);
                             setWeb1Active(true);
-                        }} data-active={isWebActive} className={'flex transition-all data-[active="true"]:bg-themeColor data-[active="true"]:text-white data-[active="true"]:border-themeColor items-center rounded-[50rem] border-darkBlue border gap-[10px] py-[10px] px-[20px] truncate text-darkBlue font-light text-[16px]'}><IconComponent name={'web'} />نسخه وب</button>
+                        }} data-active={isWebActive} className={'flex shrink-0 transition-all data-[active="true"]:bg-themeColor data-[active="true"]:text-white data-[active="true"]:border-themeColor items-center rounded-[50rem] border-darkBlue border gap-[10px] py-[10px] px-[20px] truncate text-darkBlue font-light text-[16px]'}><IconComponent name={'web'} />نسخه وب</button>
                     </div>
                     <div className={'flex justify-center items-center flex-wrap gap-[20px] px-[20px] py-[40px] rounded-[20px] bg-mediumBlue'}>
                         {
