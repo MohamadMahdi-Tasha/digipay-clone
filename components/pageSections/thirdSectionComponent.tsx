@@ -5,9 +5,9 @@
 // Importing Part
 import React, {useState} from 'react';
 import HolderComponent from "@/chunks/holderComponent";
-import IconComponent from "@/chunks/iconComponent";
 import Image from 'next/image';
 import RightSideImage from '@/public/img/thirdSection/img-right.svg';
+import DownloadButtonComponent from "@/components/downloadButtonComponent";
 
 // Creating And Exporting Third Section
 export default function ThirdSectionComponent():React.ReactNode {
@@ -25,21 +25,9 @@ export default function ThirdSectionComponent():React.ReactNode {
                     <h4 className={'text-center text-darkBlue text-[30px] mb-[20px] font-extrabold'}>دانلود اپلیکیشن دیجی‌پی</h4>
                     <h5 className={'text-center text-darkBlue/80 text-[24px] mb-[40px] font-light'}>در دسترس برای همه گوشی ها</h5>
                     <div className={'flex justify-center items-center gap-[20px] mb-[50px] overflow-auto'}>
-                        <button onClick={() => {
-                            setAndroidActive(true);
-                            setIosActive(false);
-                            setWeb1Active(false);
-                        }} data-active={isAndroidActive} className={'flex shrink-0 transition-all data-[active="true"]:bg-themeColor data-[active="true"]:text-white data-[active="true"]:border-themeColor items-center rounded-[50rem] border-darkBlue border gap-[10px] py-[10px] px-[20px] truncate text-darkBlue font-light text-[16px]'}><IconComponent name={'android'} />اندروید</button>
-                        <button onClick={() => {
-                            setAndroidActive(false);
-                            setIosActive(true);
-                            setWeb1Active(false);
-                        }} data-active={isIosActive} className={'flex shrink-0 transition-all data-[active="true"]:bg-themeColor data-[active="true"]:text-white data-[active="true"]:border-themeColor items-center rounded-[50rem] border-darkBlue border gap-[10px] py-[10px] px-[20px] truncate text-darkBlue font-light text-[16px]'}><IconComponent name={'ios'} />ایفون</button>
-                        <button onClick={() => {
-                            setAndroidActive(false);
-                            setIosActive(false);
-                            setWeb1Active(true);
-                        }} data-active={isWebActive} className={'flex shrink-0 transition-all data-[active="true"]:bg-themeColor data-[active="true"]:text-white data-[active="true"]:border-themeColor items-center rounded-[50rem] border-darkBlue border gap-[10px] py-[10px] px-[20px] truncate text-darkBlue font-light text-[16px]'}><IconComponent name={'web'} />نسخه وب</button>
+                        <DownloadButtonComponent name={'android'} isActive={isAndroidActive} onClick={() => {setAndroidActive(true);setIosActive(false);setWeb1Active(false);}} />
+                        <DownloadButtonComponent name={'ios'} isActive={isIosActive} onClick={() => {setAndroidActive(false);setIosActive(true);setWeb1Active(false);}} />
+                        <DownloadButtonComponent name={'web'} isActive={isWebActive} onClick={() => {setAndroidActive(false);setIosActive(false);setWeb1Active(true);}} />
                     </div>
                     <div className={'flex justify-center items-center flex-wrap gap-[20px] px-[20px] py-[40px] rounded-[20px] bg-mediumBlue'}>
                         {
