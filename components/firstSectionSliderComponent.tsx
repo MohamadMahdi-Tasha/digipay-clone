@@ -21,7 +21,7 @@ export default function FirstSectionSliderComponent():React.ReactNode {
     // Returning JSX
     return (
         <div className={'relative'}>
-            <div className={'w-[300px] bg-gradient-to-l from-lightBlue absolute top-[-50%] right-0 h-[500px] z-[99] pointer-events-none'} />
+            <div className={'w-[300px] lg:block hidden bg-gradient-to-l from-lightBlue absolute top-[-50%] right-0 h-[500px] z-[99] pointer-events-none'} />
             <Swiper
                 modules={[Pagination]}
                 breakpoints={{
@@ -49,7 +49,7 @@ export default function FirstSectionSliderComponent():React.ReactNode {
                 <SwiperSlide><FirstSectionSlideComponent img={RoadImage.src} title={'عوارض جاده ای'} subtitle={'بدون نیاز به توقف در باجه های عوارضی'} /></SwiperSlide>
                 <SwiperSlide><FirstSectionSlideComponent img={CameraImage.src} title={'طرح ترافیک'} subtitle={'با امکان انتخواب طرح های متنوع'} /></SwiperSlide>
             </Swiper>
-            <div className={'w-[300px] bg-gradient-to-r from-lightBlue absolute top-[-50%] left-0 h-[500px] z-[99] pointer-events-none'} />
+            <div className={'w-[300px] lg:block hidden bg-gradient-to-r from-lightBlue absolute top-[-50%] left-0 h-[500px] z-[99] pointer-events-none'} />
         </div>
     );
 }

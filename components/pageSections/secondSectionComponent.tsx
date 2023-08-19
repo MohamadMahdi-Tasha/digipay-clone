@@ -32,8 +32,8 @@ export default function SecondSectionComponent():React.ReactNode {
         <section className={'py-[50px]'}>
             <HolderComponent>
                 <header className={'mb-[50px]'}>
-                    <h3 className={'text-center text-darkBlue text-[30px] mb-[10px] font-extrabold'}>خدمات کسب و کارها</h3>
-                    <h4 className={'text-center text-darkBlue text-[24px] font-light'}>شروع تحولی محسوس در کسب وا کارتان</h4>
+                    <h3 className={'text-center text-darkBlue lg:text-[30px] text-[16px] mb-[10px] font-extrabold'}>خدمات کسب و کارها</h3>
+                    <h4 className={'text-center text-darkBlue lg:text-[24px] text-[14px] font-light'}>شروع تحولی محسوس در کسب وا کارتان</h4>
                 </header>
                 <main>
                     <div className={'flex lg:flex-row flex-col gap-[30px] items-center mb-[100px]'}>
@@ -60,14 +60,14 @@ export default function SecondSectionComponent():React.ReactNode {
                         <SecondSectionFeatureComponent name={activeFeatures} />
                     </div>
                     <div className={'mb-[75px]'}>
-                        <h4 className={'text-center text-darkBlue text-[30px] mb-[50px] font-extrabold'}>بزرگ‌ترین مشتریان خدمات کسب و کار ما</h4>
+                        <h4 className={'text-center text-darkBlue lg:text-[30px] text-[16px] mb-[50px] font-extrabold'}>بزرگ‌ترین مشتریان خدمات کسب و کار ما</h4>
                         <div className={'flex overflow-auto scrollbar-hidden'}>
-                            <a className={'block shrink-0 opacity-50'} href="#"><Image className={'w-[200px]'} src={FideboLogo.src} width={100} height={100} alt={'فیدبو'} /></a>
-                            <a className={'block shrink-0 opacity-50'} href="#"><Image className={'w-[200px]'} src={KomodaLogo.src} width={100} height={100} alt={'کمدا'} /></a>
-                            <a className={'block shrink-0 opacity-50'} href="#"><Image className={'w-[200px]'} src={DigikalaLogo.src} width={100} height={100} alt={'دیجیکالا'} /></a>
-                            <a className={'block shrink-0 opacity-50'} href="#"><Image className={'w-[200px]'} src={DigikalaBuisinesLogo.src} width={100} height={100} alt={'دیجیکالا بیزینس'} /></a>
-                            <a className={'block shrink-0 opacity-50'} href="#"><Image className={'w-[200px]'} src={DigiStyleLogo.src} width={100} height={100} alt={'دیجی استایل'} /></a>
-                            <a className={'block shrink-0 opacity-50'} href="#"><Image className={'w-[200px]'} src={DigikalaJetLogo.src} width={100} height={100} alt={'دیجیکالا جت'} /></a>
+                            <a className={'block shrink-0 opacity-50'} href="#"><Image className={'lg:w-[200px] w-[150px]'} src={FideboLogo.src} width={100} height={100} alt={'فیدبو'} /></a>
+                            <a className={'block shrink-0 opacity-50'} href="#"><Image className={'lg:w-[200px] w-[150px]'} src={KomodaLogo.src} width={100} height={100} alt={'کمدا'} /></a>
+                            <a className={'block shrink-0 opacity-50'} href="#"><Image className={'lg:w-[200px] w-[150px]'} src={DigikalaLogo.src} width={100} height={100} alt={'دیجیکالا'} /></a>
+                            <a className={'block shrink-0 opacity-50'} href="#"><Image className={'lg:w-[200px] w-[150px]'} src={DigikalaBuisinesLogo.src} width={100} height={100} alt={'دیجیکالا بیزینس'} /></a>
+                            <a className={'block shrink-0 opacity-50'} href="#"><Image className={'lg:w-[200px] w-[150px]'} src={DigiStyleLogo.src} width={100} height={100} alt={'دیجی استایل'} /></a>
+                            <a className={'block shrink-0 opacity-50'} href="#"><Image className={'lg:w-[200px] w-[150px]'} src={DigikalaJetLogo.src} width={100} height={100} alt={'دیجیکالا جت'} /></a>
                         </div>
                     </div>
                     <a className={'block'} href="#"><img className={'w-full'} src={GameImage.src} width={100} height={100} alt="بازی سرزمین دیجی پی"/></a>

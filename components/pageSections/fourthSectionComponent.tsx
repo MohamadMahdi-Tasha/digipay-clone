@@ -24,12 +24,12 @@ export default function FourthSectionComponent(): React.ReactNode {
         <section className={'py-[50px]'}>
             <HolderComponent>
                 <header>
-                    <h4 className={'text-center text-darkBlue text-[30px] mb-[20px] font-extrabold'}>مجله اینترنتی دیجی‌پی</h4>
-                    <h5 className={'text-center text-darkBlue/80 text-[24px] mb-[40px] font-light'}>جدیدترین اخبار و مطالب حوزه مالی، پرداخت و فین‌تک</h5>
+                    <h4 className={'text-center text-darkBlue lg:text-[30px] text-[16px] mb-[20px] font-extrabold'}>مجله اینترنتی دیجی‌پی</h4>
+                    <h5 className={'text-center text-darkBlue/80 lg:text-[24px] text-[14px] mb-[40px] font-light'}>جدیدترین اخبار و مطالب حوزه مالی، پرداخت و فین‌تک</h5>
                 </header>
                 <main>
                     <div className={'flex lg:flex-row flex-col items-center gap-[20px] mb-[30px]'}>
-                        <div className={'lg:w-[85%] flex justify-start items-center gap-[20px] overflow-auto'}>
+                        <div className={'lg:w-[85%] w-full flex justify-start items-center gap-[20px] overflow-auto'}>
                             <button data-active={(blogsFilter === 'دنیای مالی')} onClick={() => setBlogsFilter('دنیای مالی')} className={'flex-shrink-0 border border-darkBlue data-[active="false"]:text-darkBlue data-[active="true"]:text-white data-[active="true"]:bg-darkBlue text-[16px] font-normal px-[20px] py-[10px] rounded-[50rem]'}>دنیای مالی</button>
                             <button data-active={(blogsFilter === 'زندگی هوشمند')} onClick={() => setBlogsFilter('زندگی هوشمند')} className={'flex-shrink-0 border border-darkBlue data-[active="false"]:text-darkBlue data-[active="true"]:text-white data-[active="true"]:bg-darkBlue text-[16px] font-normal px-[20px] py-[10px] rounded-[50rem]'}>زندگی هوشمند</button>
                             <button data-active={(blogsFilter === 'اتاق خبر دیجی پی')} onClick={() => setBlogsFilter('اتاق خبر دیجی پی')} className={'flex-shrink-0 border border-darkBlue data-[active="false"]:text-darkBlue data-[active="true"]:text-white data-[active="true"]:bg-darkBlue text-[16px] font-normal px-[20px] py-[10px] rounded-[50rem]'}>اتاق خبر دیجی پی</button>

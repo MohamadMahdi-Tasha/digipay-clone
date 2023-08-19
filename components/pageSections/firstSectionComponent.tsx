@@ -11,9 +11,9 @@ export default function FirstSectionComponent():React.ReactNode {
     return (
         <section className={'pt-[200px] pb-[100px] bg-lightBlue overflow-hidden'}>
             <HolderComponent>
-                <header className={'mb-[120px]'}>
-                    <h6 className={'text-darkBlue mb-[10px] text-center text-[28px] font-normal'}>تراکنش‌های هوشمندانه و سریع با</h6>
-                    <h1 className={'text-darkBlue text-center text-[36px] font-extrabold'}>اپلیکیشن پرداخت موبایلی دیجی‌پی</h1>
+                <header className={'lg:mb-[120px] mb-[100px]'}>
+                    <h6 className={'text-darkBlue mb-[10px] text-center lg:text-[28px] text-[16px] font-normal'}>تراکنش‌های هوشمندانه و سریع با</h6>
+                    <h1 className={'text-darkBlue text-center lg:text-[36px] text-[18px] font-extrabold'}>اپلیکیشن پرداخت موبایلی دیجی‌پی</h1>
                 </header>
                 <main>
                     <FirstSectionSliderComponent />

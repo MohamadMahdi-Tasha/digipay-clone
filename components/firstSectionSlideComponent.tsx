@@ -17,8 +17,8 @@ export default function FirstSectionSlideComponent({img,title,subtitle}:propsTyp
     return (
         <div className={'bg-mediumBlue p-[20px] rounded-[20px] transition-all'}>
             <Image className={'w-[50%] mx-auto mb-[30px]'} width={100} height={100} alt={title} src={img} />
-            <span className={'block font-bold truncate w-full mb-[10px] text-center text-darkBlue text-[20px]'}>{title}</span>
-            <span className={'block font-light truncate w-full text-darkBlue text-center text-[18px]'}>{subtitle}</span>
+            <span className={'block font-bold truncate w-full mb-[10px] text-center text-darkBlue lg:text-[20px] text-[14px]'}>{title}</span>
+            <span className={'block font-light truncate w-full text-darkBlue text-center lg:text-[18px] text-[12px]'}>{subtitle}</span>
         </div>
     );
 }

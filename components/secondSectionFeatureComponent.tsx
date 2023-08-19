@@ -17,7 +17,7 @@ export default function SecondSectionFeatureComponent({name}:propsType):React.Re
     if (name === 'third') {
         return (
             <div className={'p-[30px] border rounded-[20px] border-darkBlue/20 lg:w-[75%] w-full'}>
-                <h4 className={'font-extrabold text-darkBlue/50 mb-[20px] text-[34px] truncate w-full overflow-hidden'}>آسان شدن فرآیند تمدید سرویس‌های اشتراکی</h4>
+                <h4 className={'font-extrabold text-darkBlue/50 mb-[20px] lg:text-[34px] text-[20px] truncate w-full overflow-hidden'}>آسان شدن فرآیند تمدید سرویس‌های اشتراکی</h4>
                 <div className={'flex gap-[30px] items-center lg:flex-row flex-col'}>
                     <div className={'lg:w-[75%] w-full'}>
                         <div className={'border rounded-[20px] border-darkBlue/20 p-[20px] flex flex-wrap gap-[20px] mb-[30px]'}>
@@ -44,7 +44,7 @@ export default function SecondSectionFeatureComponent({name}:propsType):React.Re
     } else if (name === 'second') {
         return (
             <div className={'p-[30px] border rounded-[20px] border-darkBlue/20 lg:w-[75%] w-full'}>
-                <h4 className={'font-extrabold text-darkBlue/50 mb-[20px] text-[34px] truncate w-full overflow-hidden'}>با اعتبار دیجی پی,از دیجی کالا قسطی خرید کنید</h4>
+                <h4 className={'font-extrabold text-darkBlue/50 mb-[20px] lg:text-[34px] text-[20px] truncate w-full overflow-hidden'}>با اعتبار دیجی پی,از دیجی کالا قسطی خرید کنید</h4>
                 <div className={'flex gap-[30px] items-center lg:flex-row flex-col'}>
                     <div className={'lg:w-[75%] w-full'}>
                         <div className={'border rounded-[20px] border-darkBlue/20 p-[20px] flex flex-wrap gap-[20px] mb-[30px]'}>
@@ -75,7 +75,7 @@ export default function SecondSectionFeatureComponent({name}:propsType):React.Re
     } else if (name === 'first') {
         return (
             <div className={'p-[30px] border rounded-[20px] border-darkBlue/20 lg:w-[75%] w-full'}>
-                <h4 className={'font-extrabold text-darkBlue/50 mb-[20px] text-[34px] truncate w-full overflow-hidden'}>آسان شدن فرآیند تمدید سرویس‌های اشتراکی</h4>
+                <h4 className={'font-extrabold text-darkBlue/50 mb-[20px] lg:text-[34px] text-[20px] truncate w-full overflow-hidden'}>آسان شدن فرآیند تمدید سرویس‌های اشتراکی</h4>
                 <div className={'flex gap-[30px] items-center lg:flex-row flex-col'}>
                     <div className={'lg:w-[75%] w-full'}>
                         <div className={'border rounded-[20px] border-darkBlue/20 p-[20px] flex flex-wrap gap-[20px] mb-[30px]'}>

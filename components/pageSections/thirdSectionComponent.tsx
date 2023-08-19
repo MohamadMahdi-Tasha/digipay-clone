@@ -22,8 +22,8 @@ export default function ThirdSectionComponent():React.ReactNode {
             <HolderComponent className={'flex lg:flex-row flex-col justify-between items-center gap-[30px]'}>
                 <Image className={'lg:w-[50%] w-full'} src={RightSideImage.src} alt={'دیجی پی دانلود'} width={100} height={100} />
                 <div className={'lg:w-[50%] w-full'}>
-                    <h4 className={'text-center text-darkBlue text-[30px] mb-[20px] font-extrabold'}>دانلود اپلیکیشن دیجی‌پی</h4>
-                    <h5 className={'text-center text-darkBlue/80 text-[24px] mb-[40px] font-light'}>در دسترس برای همه گوشی ها</h5>
+                    <h4 className={'text-center text-darkBlue lg:text-[30px] text-[16px] mb-[20px] font-extrabold'}>دانلود اپلیکیشن دیجی‌پی</h4>
+                    <h5 className={'text-center text-darkBlue/80 lg:text-[24px] text-[14px] mb-[40px] font-light'}>در دسترس برای همه گوشی ها</h5>
                     <div className={'flex justify-center items-center gap-[20px] mb-[20px] lg:overflow-visible overflow-auto'}>
                         <DownloadButtonComponent name={'android'} isActive={isAndroidActive} onClick={() => {setAndroidActive(true);setIosActive(false);setWeb1Active(false);}} />
                         <DownloadButtonComponent name={'ios'} isActive={isIosActive} onClick={() => {setAndroidActive(false);setIosActive(true);setWeb1Active(false);}} />
