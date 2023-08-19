@@ -48,8 +48,8 @@ export default function FourthSectionComponent(): React.ReactNode {
                         {
                             (filtredBlogs[0] !== undefined) ? (
                                     filtredBlogs.map((item, index) => (
-                                        <SwiperSlide>
-                                            <BlogComponent key={index} img={item.img} date={item.date} type={item.type} title={item.title} />
+                                        <SwiperSlide key={index}>
+                                            <BlogComponent img={item.img} date={item.date} type={item.type} title={item.title} />
                                         </SwiperSlide>
                                     ))
                                 ) : (

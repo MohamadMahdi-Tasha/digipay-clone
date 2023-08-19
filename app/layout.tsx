@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     keywords: 'دیجی پی,خرید,دیجیکالا,بانک,پول,رمز پویا,کارت به کارت,انلاین,digipay,digikala,atm,online',
     themeColor: '#0040ff',
     viewport: 'width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0',
-    manifest: '/public/manifest.json'
+    manifest: 'manifest.json'
 }
 
 // Defining Types Of Props
