@@ -10,6 +10,15 @@ import BlogComponent from "@/components/blogComponent";
 import {Swiper, SwiperSlide} from "swiper/react";
 import 'swiper/css';
 import BlogImage1 from '@/public/img/blogs/img-1.webp';
+import BlogImage2 from '@/public/img/blogs/img-2.jpg';
+import BlogImage3 from '@/public/img/blogs/img-3.jpeg';
+import BlogImage4 from '@/public/img/blogs/img-4.webp';
+import BlogImage5 from '@/public/img/blogs/img-5.webp';
+import BlogImage6 from '@/public/img/blogs/img-6.jpg';
+import BlogImage7 from '@/public/img/blogs/img-7.jpg';
+import BlogImage8 from '@/public/img/blogs/img-8.jpg';
+import BlogImage9 from '@/public/img/blogs/img-9.webp';
+import BlogImage10 from '@/public/img/blogs/img-10.jpg';
 
 // Creating And Exporting Fourth Section As Default
 export default function FourthSectionComponent(): React.ReactNode {
@@ -35,22 +44,20 @@ export default function FourthSectionComponent(): React.ReactNode {
                             <button className={'w-[30px] h-[30px] flex justify-center items-center'}><IconComponent name={'chevron-left'} /></button>
                         </div>
                     </div>
-                    <Swiper className={'fourth-section-slider'} spaceBetween={50} breakpoints={{
+                    <Swiper className={'fourth-section-slider'} initialSlide={3} spaceBetween={50} breakpoints={{
                         991: {slidesPerView: 2,},
                         0: {slidesPerView: 1,}
                     }}>
                         <SwiperSlide><BlogComponent img={BlogImage1.src} title={'بهترین گوشی های هوشمند از نظر باتری'} type={'راهنمای خرید اقساطی'} date={'8/17/2023'} /></SwiperSlide>
-                        <SwiperSlide><BlogComponent img={BlogImage1.src} title={'بهترین گوشی های هوشمند از نظر باتری'} type={'راهنمای خرید اقساطی'} date={'8/17/2023'} /></SwiperSlide>
-                        <SwiperSlide><BlogComponent img={BlogImage1.src} title={'بهترین گوشی های هوشمند از نظر باتری'} type={'راهنمای خرید اقساطی'} date={'8/17/2023'} /></SwiperSlide>
-                        <SwiperSlide><BlogComponent img={BlogImage1.src} title={'بهترین گوشی های هوشمند از نظر باتری'} type={'راهنمای خرید اقساطی'} date={'8/17/2023'} /></SwiperSlide>
-                        <SwiperSlide><BlogComponent img={BlogImage1.src} title={'بهترین گوشی های هوشمند از نظز باتری'} type={'راهنمای خرید اقساطی'} date={'8/17/2023'} /></SwiperSlide>
-                        <SwiperSlide><BlogComponent img={BlogImage1.src} title={'بهترین گوشی های هوشمند از نظز باتری'} type={'راهنمای خرید اقساطی'} date={'8/17/2023'} /></SwiperSlide>
-                        <SwiperSlide><BlogComponent img={BlogImage1.src} title={'بهترین گوشی های هوشمند از نظز باتری'} type={'راهنمای خرید اقساطی'} date={'8/17/2023'} /></SwiperSlide>
-                        <SwiperSlide><BlogComponent img={BlogImage1.src} title={'بهترین گوشی های هوشمند از نظز باتری'} type={'راهنمای خرید اقساطی'} date={'8/17/2023'} /></SwiperSlide>
-                        <SwiperSlide><BlogComponent img={BlogImage1.src} title={'بهترین گوشی های هوشمند از نظز باتری'} type={'راهنمای خرید اقساطی'} date={'8/17/2023'} /></SwiperSlide>
-                        <SwiperSlide><BlogComponent img={BlogImage1.src} title={'بهترین گوشی های هوشمند از نظز باتری'} type={'راهنمای خرید اقساطی'} date={'8/17/2023'} /></SwiperSlide>
-                        <SwiperSlide><BlogComponent img={BlogImage1.src} title={'بهترین گوشی های هوشمند از نظز باتری'} type={'راهنمای خرید اقساطی'} date={'8/17/2023'} /></SwiperSlide>
-                        <SwiperSlide><BlogComponent img={BlogImage1.src} title={'بهترین گوشی های هوشمند از نظز باتری'} type={'راهنمای خرید اقساطی'} date={'8/17/2023'} /></SwiperSlide>
+                        <SwiperSlide><BlogComponent img={BlogImage2.src} title={'نحوه واریز پول به شماره حساب با گوشی'} type={'زندگی هوشمند'} date={'8/17/2023'} /></SwiperSlide>
+                        <SwiperSlide><BlogComponent img={BlogImage3.src} title={'اینترنت کدام اپراتور بهتر است'} type={'زندگی هوشمند'} date={'8/12/2023'} /></SwiperSlide>
+                        <SwiperSlide><BlogComponent img={BlogImage4.src} title={'بهترین موتورسیکلت های سفر و تورینگ'} type={'راهنمای خرید اقساطی'} date={'8/12/2023'} /></SwiperSlide>
+                        <SwiperSlide><BlogComponent img={BlogImage5.src} title={'بهترین کارت گرافیک برای بازی'} type={'راهنمای خرید اقساطی'} date={'8/12/2023'} /></SwiperSlide>
+                        <SwiperSlide><BlogComponent img={BlogImage6.src} title={'چگونه هدفون بلوتوثی را به ps5 وصل کنیم'} type={'راهنمای خرید اقساطی'} date={'8/5/2023'} /></SwiperSlide>
+                        <SwiperSlide><BlogComponent img={BlogImage7.src} title={'بهترین مارک جاروبرقی ایرانی و خارجی'} type={'راهنمای خرید اقساطی'} date={'8/5/2023'} /></SwiperSlide>
+                        <SwiperSlide><BlogComponent img={BlogImage8.src} title={'بهترین برند لوازم خانگی ایرانی'} type={'راهنمای خرید اقساطی'} date={'8/5/2023'} /></SwiperSlide>
+                        <SwiperSlide><BlogComponent img={BlogImage9.src} title={'بهترین لپ تاپ های سبک بازار'} type={'راهنمای خرید اقساطی'} date={'7/29/2023'} /></SwiperSlide>
+                        <SwiperSlide><BlogComponent img={BlogImage10.src} title={'راهنمای خرید کیبورد گیمینگ'} type={'راهنمای خرید اقساطی'} date={'7/29/2023'} /></SwiperSlide>
                     </Swiper>
                 </main>
             </HolderComponent>
