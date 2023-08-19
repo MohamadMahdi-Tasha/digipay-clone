@@ -29,6 +29,12 @@ export default function IconComponent({name}:typeofProps):React.ReactNode {
                 <path d="M14 8L10 12L14 16" stroke="#061962" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
         );
+    } else if (name === 'chevron-right') {
+        return (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{transform: 'rotate(180deg)'}}>
+                <path d="M14 8L10 12L14 16" stroke="#061962" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+        );
     } else if (name === 'login') {
         return (
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
