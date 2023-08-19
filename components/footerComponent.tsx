@@ -15,7 +15,7 @@ export default function FooterComponent():React.ReactNode {
     return (
         <footer className={'py-[50px] border-t border-darkBlue/20'}>
             <HolderComponent>
-                <div className={'grid grid-cols-6 gap-[50px] mb-[30px]'}>
+                <div className={'lg:grid flex flex-col grid-cols-6 gap-[50px] mb-[30px]'}>
                     <div className={'col-span-2'}>
                         <Image className={'w-[80px] mb-[10px]'} width={100} height={100} src={LogoTypoImage.src} alt={'دیجی پی'}></Image>
                         <p className={'font-light text-darkBlue/80 text-[15px] mb-[10px]'}>آدرس:تهران، بلوار نلسون ماندلا، بلوار صبا غربی، پلاک 2، طبقه 3</p>
@@ -70,9 +70,9 @@ export default function FooterComponent():React.ReactNode {
                         </div>
                     </div>
                 </div>
-                <div className={'flex items-center gap-[20px]'}>
-                    <span className={'font-light text-darkBlue block whitespace-nowrap text-[10px]'}>کلیه حقوق این سایت متعلق به شرکت نوآوران پرداخت مجازی ایرانیان (دیجی پی) است.</span>
-                    <div className={'w-full h-[1px] bg-darkBlue/20'} />
+                <div className={'flex lg:flex-row flex-col items-center gap-[20px]'}>
+                    <span className={'font-light text-darkBlue block whitespace-nowrap lg:text-[10px] text-[15px] truncate w-full'}>کلیه حقوق این سایت متعلق به شرکت نوآوران پرداخت مجازی ایرانیان (دیجی پی) است.</span>
+                    <div className={'w-full h-[1px] bg-darkBlue/20 lg:block hidden'} />
                     <div className={'flex items-center gap-[20px]'}>
                         <a className={'p-[20px] rounded-[20px] border border-darkBlue/20'} href="#"><img className={'w-[200px] aspect-square'} src={SamandehiImage.src} alt="ساماندهی"/></a>
                         <a className={'p-[20px] rounded-[20px] border border-darkBlue/20'} href="#"><img className={'w-[200px] aspect-square'} src={RasaneImage.src} alt="رسانه"/></a>
