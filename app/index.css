@@ -30,4 +30,4 @@
 
 .fourth-section-slider {@apply overflow-visible !important;}
 .fourth-section-slider .swiper-slide {@apply transition-all !important;}
-.fourth-section-slider .swiper-slide:not(.swiper-slide-active, .swiper-slide-next) {@apply opacity-20 !important;}
+.fourth-section-slider .swiper-slide:not(.swiper-slide-active, .swiper-slide-next) {@apply lg:opacity-20 !important;}
