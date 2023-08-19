@@ -26,7 +26,7 @@ export default function RootLayout({children}:propsType):React.ReactNode {
     // Returning JSX
     return (
         <html lang={'fa'}>
-            <body dir={'rtl'} className={'font-primary'}>
+            <body dir={'rtl'} className={'font-primary overflow-x-hidden'}>
                 <HeaderComponent />
                 {children}
             </body>
