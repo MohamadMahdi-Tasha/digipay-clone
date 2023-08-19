@@ -16,7 +16,7 @@ export default function DownloadButtonComponent({name, onClick, isActive}:propsT
     return (
         <button onClick={onClick}
                 data-active={isActive}
-                className={'flex shrink-0 transition-all data-[active="true"]:bg-themeColor data-[active="true"]:text-white data-[active="true"]:border-themeColor items-center rounded-[50rem] border-darkBlue border gap-[10px] py-[10px] px-[20px] truncate text-darkBlue font-light text-[16px] data-[active="true"]:after:content-[""] data-[active="true"]:after:absolute data-[active="true"]:after:top-full data-[active="true"]:after:left-0 data-[active="true"]:after:w-full data-[active="true"]:after:h-[2px] data-[active="true"]:after:bg-themeColor relative'}
+                className={'flex shrink-0 transition-all data-[active="true"]:bg-themeColor data-[active="true"]:text-white data-[active="true"]:border-themeColor items-center rounded-[50rem] border-darkBlue border gap-[10px] py-[10px] px-[20px] text-darkBlue font-light text-[16px] relative lg:data-[active="true"]:after:content-[""] lg:data-[active="true"]:after:absolute lg:data-[active="true"]:after:w-full lg:data-[active="true"]:after:h-[5px] lg:data-[active="true"]:after:bg-themeColor lg:data-[active="true"]:after:left-0 lg:data-[active="true"]:after:top-full lg:data-[active="true"]:after:translate-y-[23px]'}
         >
             <IconComponent name={name} />
             {

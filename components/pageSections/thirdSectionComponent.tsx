@@ -24,12 +24,12 @@ export default function ThirdSectionComponent():React.ReactNode {
                 <div className={'lg:w-[50%] w-full'}>
                     <h4 className={'text-center text-darkBlue text-[30px] mb-[20px] font-extrabold'}>دانلود اپلیکیشن دیجی‌پی</h4>
                     <h5 className={'text-center text-darkBlue/80 text-[24px] mb-[40px] font-light'}>در دسترس برای همه گوشی ها</h5>
-                    <div className={'flex justify-center items-center gap-[20px] mb-[50px] overflow-auto'}>
+                    <div className={'flex justify-center items-center gap-[20px] mb-[20px] lg:overflow-visible overflow-auto'}>
                         <DownloadButtonComponent name={'android'} isActive={isAndroidActive} onClick={() => {setAndroidActive(true);setIosActive(false);setWeb1Active(false);}} />
                         <DownloadButtonComponent name={'ios'} isActive={isIosActive} onClick={() => {setAndroidActive(false);setIosActive(true);setWeb1Active(false);}} />
                         <DownloadButtonComponent name={'web'} isActive={isWebActive} onClick={() => {setAndroidActive(false);setIosActive(false);setWeb1Active(true);}} />
                     </div>
-                    <div className={'flex justify-center items-center flex-wrap gap-[20px] px-[20px] py-[40px] rounded-[20px] bg-mediumBlue'}>
+                    <div className={'flex justify-center items-center flex-wrap gap-[20px] px-[20px] py-[40px] rounded-[20px] bg-mediumBlue h-[200px] overflow-auto'}>
                         {
                             (isAndroidActive)
                                 ? (
