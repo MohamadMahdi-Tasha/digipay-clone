@@ -27,8 +27,8 @@ export default function HeaderComponent():React.ReactNode {
     const [isOnlineMagazineHovered, setOnlineMagazineHovered] = useState(false);
 
     // Checking If Window Is Scrolled
-    window.addEventListener('scroll', () => {
-        (window.scrollY !== 0)
+    addEventListener('scroll', () => {
+        (scrollY !== 0)
             ? setScrolled(true)
             : setScrolled(false)
     })

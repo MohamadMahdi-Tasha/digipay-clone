@@ -5,6 +5,7 @@ import '@/public/font/YekanBakh/yekanBakh.css';
 import '@/app/index.css';
 import React from "react";
 import HeaderComponent from "@/components/headerComponent";
+import FooterComponent from "@/components/footerComponent";
 
 // Creating And Exporting Meta Data Of Page
 export const metadata: Metadata = {
@@ -29,6 +30,7 @@ export default function RootLayout({children}:propsType):React.ReactNode {
             <body dir={'rtl'} className={'font-primary overflow-x-hidden'}>
                 <HeaderComponent />
                 {children}
+                <FooterComponent />
             </body>
         </html>
     );

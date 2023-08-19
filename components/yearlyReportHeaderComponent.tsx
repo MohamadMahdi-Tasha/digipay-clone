@@ -4,7 +4,7 @@ import React from "react";
 import HolderComponent from "@/chunks/holderComponent";
 import IconComponent from "@/chunks/iconComponent";
 import ServicesHeaderFooterComponent from "@/components/servicesHeaderFooterComponent";
-import ImageDigipay from '@/public/img/header/img-digipay.png';
+import ImageDigipay from '@/public/img/img-digipay.png';
 import Image from "next/image";
 
 // Defining Types Of Props
