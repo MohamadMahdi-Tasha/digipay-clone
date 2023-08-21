@@ -2,6 +2,7 @@
 // Importing Part
 import {Metadata} from "next";
 import '@/app/index.css';
+import '@/public/fonts/YekanBakh/font.css';
 import React from "react";
 import HeaderComponent from "@/components/headerComponent";
 import FooterComponent from "@/components/footerComponent";
