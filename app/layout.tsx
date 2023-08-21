@@ -1,7 +1,6 @@
 // Codes By Mahdi Tasha
 // Importing Part
 import {Metadata} from "next";
-import '@/public/font/YekanBakh/yekanBakh.css';
 import '@/app/index.css';
 import React from "react";
 import HeaderComponent from "@/components/headerComponent";
