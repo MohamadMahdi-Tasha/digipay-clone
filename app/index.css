@@ -1,4 +1,7 @@
 /*Codes By Mahdi Tasha*/
+/*Importing Font*/
+@import '../public/fonts/YekanBakh/font.css';
+
 /*Importing TailwindCSS*/
 @tailwind base;
 @tailwind components;

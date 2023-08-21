@@ -5,31 +5,6 @@ import '@/app/index.css';
 import React from "react";
 import HeaderComponent from "@/components/headerComponent";
 import FooterComponent from "@/components/footerComponent";
-import localFont from 'next/font/local';
-
-// Defining Font To Use
-const YekanBakhFont = localFont({src: [
-    {
-        path: 'font/YekanBakh-light.woff',
-        weight: '300',
-        style: 'normal'
-    },
-    {
-        path: 'font/YekanBakh-Regular.woff',
-        weight: '500',
-        style: 'normal'
-    },
-    {
-        path: 'font/YekanBakh-Black.woff',
-        weight: '900',
-        style: 'normal'
-    },
-    {
-        path: 'font/YekanBakh-Bold.woff',
-        weight: '700',
-        style: 'normal'
-    }
-]})
 
 // Creating And Exporting Meta Data Of Page
 export const metadata: Metadata = {
@@ -51,7 +26,7 @@ export default function RootLayout({children}:propsType):React.ReactNode {
     // Returning JSX
     return (
         <html lang={'fa'}>
-            <body dir={'rtl'} className={`font-primary overflow-x-hidden ${YekanBakhFont.className}`}>
+            <body dir={'rtl'} className={'font-primary overflow-x-hidden font-primary'}>
                 <HeaderComponent />
                 {children}
                 <FooterComponent />
