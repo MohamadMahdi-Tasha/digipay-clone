@@ -10,22 +10,22 @@ import localFont from 'next/font/local';
 // Defining Font To Use
 const YekanBakhFont = localFont({src: [
     {
-        path: '../public/font/YekanBakh/font/YekanBakh-light.woff',
+        path: 'font/YekanBakh-light.woff',
         weight: '300',
         style: 'normal'
     },
     {
-        path: '../public/font/YekanBakh/font/YekanBakh-Regular.woff',
+        path: 'font/YekanBakh-Regular.woff',
         weight: '500',
         style: 'normal'
     },
     {
-        path: '../public/font/YekanBakh/font/YekanBakh-Black.woff',
+        path: 'font/YekanBakh-Black.woff',
         weight: '900',
         style: 'normal'
     },
     {
-        path: '../public/font/YekanBakh/font/YekanBakh-Bold.woff',
+        path: 'font/YekanBakh-Bold.woff',
         weight: '700',
         style: 'normal'
     }
