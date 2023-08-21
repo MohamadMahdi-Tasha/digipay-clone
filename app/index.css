@@ -1,6 +1,6 @@
 /*Codes By Mahdi Tasha*/
 /*Importing Font*/
-/* @import '../public/font/YekanBakh/yekanBakh.css'; */
+@import '../public/font/YekanBakh/yekanBakh.css';
 
 /*Importing TailwindCSS*/
 @tailwind base;
