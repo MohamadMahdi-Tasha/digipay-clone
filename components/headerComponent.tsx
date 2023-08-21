@@ -3,7 +3,7 @@
 'use client';
 
 // Importing Part
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import HolderComponent from "@/chunks/holderComponent";
 import Image from "next/image";
 import TypoLogoImage from '@/public/img/header/img-logo-typo.svg';
@@ -26,11 +26,12 @@ export default function HeaderComponent():React.ReactNode {
     const [isYearlyReportHovered, setYearlyReportHovered] = useState(false);
     const [isOnlineMagazineHovered, setOnlineMagazineHovered] = useState(false);
 
-    // Checking If Window Is Scrolled
-    addEventListener('scroll', () => {
-        (scrollY !== 0)
-            ? setScrolled(true)
-            : setScrolled(false)
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            (window.scrollY !== 0)
+                ? setScrolled(true)
+                : setScrolled(false)
+        })
     })
 
     // Returning JSX
