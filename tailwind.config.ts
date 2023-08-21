@@ -22,9 +22,6 @@ const config: Config = {
             mediumBlue: '#b1bfef',
             lightGreen: 'rgb(238, 255, 246)',
             lightOrange: 'rgb(255, 245, 238)'
-        },
-        fontFamily: {
-            primary: ['YekanBakh', 'sans-serif']
         }
     },
     plugins: [],
