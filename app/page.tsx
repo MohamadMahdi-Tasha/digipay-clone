@@ -1,7 +1,4 @@
 // Codes By Mahdi Tasha
-// 
-
-'use client';
 // Importing Part
 import React from "react";
 import FirstSectionComponent from '@/components/pageSections/firstSectionComponent';
@@ -32,13 +29,13 @@ const YekanBakhFont = localFont({src: [
         weight: '700',
         style: 'normal'
     }
-]})
+], variable : '--font-primary'})
 
 // Creating Home Page And Exporting It As Default
 export default function HomePage(): React.ReactNode {
     // Returning JSX
     return (
-        <div className={YekanBakhFont.className}>
+        <div className={`${YekanBakhFont.variable} font-primary`}>
             <FirstSectionComponent/>
             <SecondSectionComponent/>
             <ThirdSectionComponent />
