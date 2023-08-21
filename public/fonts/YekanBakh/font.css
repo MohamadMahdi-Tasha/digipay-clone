@@ -5,26 +5,26 @@
     font-family: yekanbakh;
     font-style: normal;
     font-weight: 300;
-    src: url('font/Yekanbakh-Light.woff') format('woff');
+    src: url('/public/fonts/YekanBakh/font/Yekanbakh-Light.woff') format('woff');
 }
 
 @font-face {
     font-family: yekanbakh;
     font-style: normal;
     font-weight: normal;
-    src: url('font/Yekanbakh-Regular.woff') format('woff');
+    src: url('/public/fonts/YekanBakh/font/Yekanbakh-Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: yekanbakh;
     font-style: normal;
     font-weight: bold;
-    src: url('font/Yekanbakh-Bold.woff') format('woff');
+    src: url('/public/fonts/YekanBakh/font/Yekanbakh-Bold.woff') format('woff');
 }
 
 @font-face {
     font-family: yekanbakh;
     font-style: normal;
     font-weight: 900;
-    src: url('font/Yekanbakh-Black.woff') format('woff');
+    src: url('/public/fonts/YekanBakh/font/Yekanbakh-Black.woff') format('woff');
 }
